@@ -1,0 +1,52 @@
+@import "./sass/index.scss";
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  display: flex;
+  min-height: 100vh;
+  background-color: $background-color-primery;
+  font-size: calc(10px + 1.2vmin);
+  color: $primery-color;
+  /* flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start ;*/
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: cyan;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.primary_container {
+  display: flex;
+  margin: auto auto;
+
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  border: 1px solid $primery-color;
+  border-radius: 15px;
+  width: 100%;
+  padding: 1.5rem 0;
+  max-width: 27rem;
+}
+
+.text {
+  font-size: 1rem;
+}
+.title {
+  font-size: 1.4rem;
+}

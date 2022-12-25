@@ -1,0 +1,12 @@
+@import "../../sass/index.scss";
+
+.button {
+  width: 96%;
+  max-width: 26rem;
+  padding: 0.4rem 0;
+  margin-top: 2%;
+  background-color: $secondary-color;
+  border: 1px solid $background-color-secondary;
+  border-radius: 4px;
+  font-weight: 700;
+}

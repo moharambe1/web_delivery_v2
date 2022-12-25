@@ -1,0 +1,69 @@
+@import "../../sass/index.scss";
+
+.sideBar {
+  position: fixed;
+
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: calc(100vw - 15rem);
+
+  background-color: $background-color-secondary;
+  @include debug-rgb;
+
+  h3 {
+    color: $tertiary-color;
+    font-size: 1rem;
+    padding: 0.8em 0;
+  }
+  .menu {
+    .menu-item {
+      display: block;
+      padding: 1em 0;
+      color: $tertiary-color;
+      text-decoration: none;
+      transition: 0.2s linear;
+      border-left: 5px solid;
+      border-left-color: $background-color-secondary;
+      //@include debug-rgb;
+    }
+    .is-active {
+      color: $secondary-color;
+      border-left: 5px solid $secondary-color;
+    }
+  }
+}
+.menu .menu-item:hover {
+  color: #3bba9c;
+
+  border-left-color: #3bba9c;
+}
+
+.sideBar.open {
+  display: block;
+}
+.sideBar.close {
+  display: none;
+}
+
+.taggle-menu {
+  border: 0;
+  //background-color: transparent;
+  height: 2.4rem;
+  width: 2.4rem;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.taggle-menu.close {
+  background-image: url("../../../public/icons/bars-solid.svg");
+}
+
+.taggle-menu.open {
+  background-image: url("../../../public/icons/xmark-solid.svg");
+}
